@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       Lasaani Digital— EDIT HERE (quick reference)
+       • Business name ....... search "Lasaani Digital"
+       • Headline/subheading . HERO section below
+       • Phone number ........ search "303"
+       • WhatsApp link ....... search "wa.me"
+       • Email ............... search "shahzadlodhra88@gmail.com"
+       • Colors .............. :root and [data-theme="dark"] in styles.css
+       • Map embed ........... search "google.com/maps" (Contact section)
+       • Logo / favicon ...... inline SVGs marked "Lasaani"
+       ============================================================ -->
+
+  <!-- EDIT HERE: page title & description (SEO + social sharing) -->
+  <title>ll — Professional Services That Grow Your Business</title>
+  <meta name="description" content="Lasaani Digitalis a professional services company helping businesses grow with design, development, SEO and marketing. Fast, friendly, and reliable.">
+
+  <!-- Open Graph (social sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lasaani Digital— Professional Services That Grow Your Business">
+  <meta property="og:description" content="Design, development, SEO and marketing for growing businesses.">
+  <!-- EDIT HERE: paste a real image URL for social sharing -->
+  <meta property="og:image" content="https://Lasaani Digital.example/og-image.png">
+
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Inline SVG favicon (no image downloads) — EDIT HERE: replace with your Lasaani -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Cpath d='M32 14l5.5 13.5L51 33l-13.5 5.5L32 52l-5.5-13.5L13 33l13.5-5.5z' fill='%23ffffff'/%3E%3C/svg%3E">
+
+  <!-- Set theme before first paint (prevents flash). EDIT HERE: storage key if changed in script.js -->
+  <script>
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("Lasaani Digital-theme"); } catch (e) {}
+      var dark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", saved || (dark ? "dark" : "light"));
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+  /* EDIT HERE: brand name style */
+  a.nav-Lasaani {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+  }
+  a.nav-Lasaani span {
+    font-size: clamp(1.6rem, 4vw, 3.2rem) !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+  }
+  [data-theme="dark"] a.nav-Lasaani span {
+    color: #ffffff !important;
+  }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ 1. NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <!-- Lasaani: replace the SVG + "Lasaani Digital" text -->
+      <a class="nav-Lasaani" href="#top" aria-label="Lasaani Digital— home">
+        <svg class="Lasaani-mark" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true" focusable="false">
+          <rect width="64" height="64" rx="14" fill="var(--accent)"/>
+          <path d="M32 14l5.5 13.5L51 33l-13.5 5.5L32 52l-5.5-13.5L13 33l13.5-5.5z" fill="#ffffff"/>
+        </svg>
+        <span>Lasaani Digital</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="nav-menu" data-nav-menu>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <!-- Contact button inside the mobile menu (hidden on desktop) -->
+          <li class="nav-cta-mobile"><a class="btn btn-primary" href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle dark mode" aria-pressed="false">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.9" y1="4.9" x2="6.3" y2="6.3"/><line x1="17.7" y1="17.7" x2="19.1" y2="19.1"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="4.9" y1="19.1" x2="6.3" y2="17.7"/><line x1="17.7" y1="6.3" x2="19.1" y2="4.9"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <!-- EDIT HERE: "Contact us" button target -->
+        <a class="btn btn-primary btn-sm nav-cta" href="#contact">Contact us</a>
+        <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 2. HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <!-- EDIT HERE: headline & subheading -->
+          <h1>Professional services that help your business grow</h1>
+          <p class="hero-sub">Design, development, SEO and marketing — delivered fast, priced fairly, and built to last.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-outline" href="#services">Explore services</a>
+          </div>
+        </div>
+
+        <!-- Decorative illustration (inline SVG only) -->
+        <svg class="hero-art" viewBox="0 0 480 400" aria-hidden="true" focusable="false">
+          <circle cx="240" cy="200" r="160" fill="var(--surface)"/>
+          <circle cx="240" cy="200" r="160" fill="none" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="4 8"/>
+          <circle cx="240" cy="200" r="112" fill="none" stroke="var(--border)" stroke-width="1.5"/>
+          <path d="M240 110l12 29 31 4 23 22-8 31-28 11-28-11-8-31 23-22 31-4z" fill="var(--accent)" opacity="0.9"/>
+          <path d="M120 90l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="var(--accent)" opacity="0.5"/>
+          <path d="M370 280l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="var(--accent)" opacity="0.5"/>
+          <circle cx="110" cy="300" r="7" fill="var(--accent)" opacity="0.35"/>
+          <circle cx="380" cy="100" r="9" fill="none" stroke="var(--accent)" stroke-width="3" opacity="0.35"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============ 3. SERVICES ============ -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Services</span>
+          <!-- EDIT HERE: section titles & descriptions -->
+          <h2>What we do</h2>
+          <p>Everything you need to build, launch and grow a great business online.</p>
+        </div>
+        <div class="services-grid">
+          <article class="card" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            </div>
+            <h3>Web Design</h3>
+            <p>Beautiful, conversion-focused websites designed around your customers — from landing pages to full sites.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Development</h3>
+            <p>Fast, accessible, mobile-first builds with clean code — no lock-in, no surprises.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3>SEO</h3>
+            <p>Practical search optimization that lifts your rankings and brings in qualified traffic.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5L17 22l-5-3-5 3 1.5-8.5"/></svg>
+            </div>
+            <h3>Branding</h3>
+            <p>Lasaanis, color systems and voice guidelines that make your brand instantly recognizable.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-7v14L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg>
+            </div>
+            <h3>Marketing</h3>
+            <p>Campaigns and content strategies that turn attention into customers.</p>
+          </article>
+
+          <article class="card" data-reveal>
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            </div>
+            <h3>Support</h3>
+            <p>Friendly, fast support that keeps your site secure, backed up and running.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div data-reveal>
+          <div class="section-head">
+            <span class="eyebrow">About</span>
+            <!-- EDIT HERE: your story -->
+            <h2>A small team with big standards</h2>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1.1rem;">
+            Lasaani Digitalstarted in 2016 with a simple idea: great design and solid
+            technology should be within reach of every business. Today we partner
+            with clients around the world — from first-time founders to established
+            brands — and we believe in clear communication, honest pricing, and
+            work we're proud to put our name on.
+          </p>
+          <ul class="feature-list">
+            <li>Fixed, transparent quotes — no surprise invoices</li>
+            <li>A dedicated contact from start to launch</li>
+            <li>Support that answers within one business day</li>
+          </ul>
+        </div>
+        <div class="stats" data-reveal>
+          <!-- EDIT HERE: key numbers -->
+          <div class="stat">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Years of experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">250+</span>
+            <span class="stat-label">Happy clients</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Projects delivered</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. TESTIMONIALS ============ -->
+    <section class="section section-alt" id="testimonials">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Testimonials</span>
+          <h2>What clients say</h2>
+          <p>Real results from real businesses.</p>
+        </div>
+        <p class="sample-note" data-reveal>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          <!-- EDIT HERE: replace with real client reviews -->
+          Sample testimonials — replace these with real client reviews.
+        </p>
+        <div class="testimonial-grid">
+          <article class="card testimonial-card" data-reveal>
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p>"Lasaani Digitalrebuilt our website and bookings doubled in three months. Communication was excellent throughout."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <span class="avatar" aria-hidden="true">SM</span>
+              <div>
+                <div class="author-name">Sarah Mitchell</div>
+                <div class="author-role">Owner, Bloom &amp; Co.</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card testimonial-card" data-reveal>
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p>"Professional, honest and fast. They explained everything in plain language and delivered exactly what they promised."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <span class="avatar" aria-hidden="true">DO</span>
+              <div>
+                <div class="author-name">David Okafor</div>
+                <div class="author-role">Founder, Nimbus Fitness</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card testimonial-card" data-reveal>
+            <div class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              <p>"Our SEO traffic grew 140% in six months. They truly feel like an extension of our team."</p>
+            </blockquote>
+            <div class="testimonial-author">
+              <span class="avatar" aria-hidden="true">ER</span>
+              <div>
+                <div class="author-name">Elena Rodriguez</div>
+                <div class="author-role">Manager, Casa Verde</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. PRICING ============ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">Pricing</span>
+          <!-- EDIT HERE: plans, prices & features -->
+          <h2>Simple, honest pricing</h2>
+          <p>Month-to-month plans. Cancel anytime.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="card pricing-card" data-reveal>
+            <h3>Starter</h3>
+            <p class="price">$19<span>/mo</span></p>
+            <p class="price-note">billed annually</p>
+            <ul class="feature-list">
+              <li>1-page website</li>
+              <li>Monthly updates</li>
+              <li>Basic SEO setup</li>
+              <li>Email support</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Choose Starter</a>
+          </article>
+
+          <article class="card pricing-card featured" data-reveal>
+            <span class="pricing-badge">Most popular</span>
+            <h3>Pro</h3>
+            <p class="price">$49<span>/mo</span></p>
+            <p class="price-note">billed annually</p>
+            <ul class="feature-list">
+              <li>5-page website</li>
+              <li>Monthly SEO &amp; analytics</li>
+              <li>Social media setup</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Choose Pro</a>
+          </article>
+
+          <article class="card pricing-card" data-reveal>
+            <h3>Business</h3>
+            <p class="price">$99<span>/mo</span></p>
+            <p class="price-note">billed annually</p>
+            <ul class="feature-list">
+              <li>Unlimited pages</li>
+              <li>Dedicated account manager</li>
+              <li>Monthly strategy call</li>
+              <li>24/7 monitoring</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact">Choose Business</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. FAQ ============ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-head center" data-reveal>
+          <span class="eyebrow">FAQ</span>
+          <!-- EDIT HERE: questions & answers -->
+          <h2>Frequently asked questions</h2>
+          <p>Everything else, just ask us.</p>
+        </div>
+        <div class="faq-list">
+          <details data-reveal>
+            <summary>How fast can you get started?
+              <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-body"><p>Most projects launch within 1–2 weeks. We start with a short discovery call to understand your goals, then send a fixed quote before any work begins.</p></div>
+          </details>
+          <details data-reveal>
+            <summary>Do you offer a free consultation?
+              <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-body"><p>Yes — every engagement starts with a free 30-minute consultation. We'll review your goals, your current site, and outline a plan that fits your budget.</p></div>
+          </details>
+          <details data-reveal>
+            <summary>What do you need from me?
+              <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-body"><p>Just your goals and any existing content (Lasaani, text, photos). Don't have content yet? No problem — we can help create it as part of your project.</p></div>
+          </details>
+          <details data-reveal>
+            <summary>Do you work with small businesses and startups?
+              <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-body"><p>Absolutely. Around 80% of our clients are small businesses and early-stage startups. Our pricing is transparent and there are no long-term contracts.</p></div>
+          </details>
+          <details data-reveal>
+            <summary>How can I get a quote?
+              <svg class="faq-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+            </summary>
+            <div class="faq-body"><p>Use the contact form below or message us on WhatsApp. We reply within 1–2 business days with a fixed, itemized quote.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">Contact</span>
+          <h2>Let's work together</h2>
+          <p>Fill in the form and we'll get back to you within 1–2 business days.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" data-contact-form novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+              <p class="field-error" id="name-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+              <p class="field-error" id="email-error" hidden></p>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+              <p class="field-error" id="message-error" hidden></p>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="form-success" role="status" hidden></p>
+          </form>
+
+          <div class="contact-side">
+            <div class="card contact-card" data-reveal>
+              <h3>Contact details</h3>
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </span>
+                  <div>
+                    <strong>Phone</strong>
+                    <!-- EDIT HERE: phone number (display + tel: link) -->
+                    <a href="tel:+923032782788">+92 (303) 278-2788</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  <div>
+                    <strong>Email</strong>
+                    <!-- EDIT HERE: email address -->
+                    <a href="mailto:">shahzadlodhra88@gmail.com</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="contact-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </span>
+                  <div>
+                    <strong>Office</strong>
+                    <!-- EDIT HERE: office address -->
+                    <span>Shanti Nagar near football stadiam</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- EDIT HERE: paste your real Google Maps embed (Google Maps → Share → Embed a map).
+                 The src below is a keyless placeholder and needs an internet connection. -->
+            <iframe class="map-frame" title="Lasaani Digitaloffice location map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.819612964291!2d67.09785107443128!3d24.90413394351036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb3392989517f87%3A0xc37937bf289aa5b1!2sDalmia%20Football%20Ground!5e0!3m2!1sen!2s!4v1792005329556!5m2!1sen!2s" 
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 9. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <!-- Lasaani: same mark as the navbar -->
+          <a class="nav-Lasaani" href="#top" aria-label="Lasaani Digital— home">
+            <svg class="Lasaani-mark" viewBox="0 0 64 64" width="28" height="28" aria-hidden="true" focusable="false">
+              <rect width="64" height="64" rx="14" fill="var(--accent)"/>
+              <path d="M32 14l5.5 13.5L51 33l-13.5 5.5L32 52l-5.5-13.5L13 33l13.5-5.5z" fill="#ffffff"/>
+            </svg>
+            <span class="brand-name">Lasaani Digital</span>
+          </a>
+          <p class="footer-tagline">Professional services that help your business grow.</p>
+          <!-- EDIT HERE: social profile links -->
+          <div class="social">
+            <a href="https://x.com/Lasaani Digital" target="_blank" rel="noopener" aria-label="Lasaani Digitalon X">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="https://facebook.com/Lasaani Digital" target="_blank" rel="noopener" aria-label="Lasaani Digitalon Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://linkedin.com/company/Lasaani Digital" target="_blank" rel="noopener" aria-label="Lasaani Digitalon LinkedIn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://instagram.com/Lasaani Digital" target="_blank" rel="noopener" aria-label="Lasaani Digitalon Instagram">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Design</a></li>
+            <li><a href="#services">Development</a></li>
+            <li><a href="#services">SEO</a></li>
+            <li><a href="#services">Branding</a></li>
+            <li><a href="#services">Marketing</a></li>
+            <li><a href="#services">Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© <span data-year>2026</span> Lasaani Digital. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button — EDIT HERE: replace 15551234567 with your number (country code + number, no + or spaces) -->
+  <a class="whatsapp-float" href="https://wa.me/923032782788" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4 0-.5.1-.7l.4-.5c.1-.2.1-.3 0-.5l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1.1 2.7c.1.2 1.9 3 4.6 4.2 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
